@@ -1,5 +1,9 @@
 @import url(../vendor/normalize.css);
 
+* {
+    scroll-behavior: smooth;
+  }
+  
 .root {
     background-color: #ECE2D9;
     text-rendering: optimizeLegibility;
