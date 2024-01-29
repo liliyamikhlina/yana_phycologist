@@ -4,25 +4,6 @@
   scroll-behavior: smooth;
 }
 
-a {
-  text-decoration: none;
-}
-
-.paragraph {
-  font-family: "Jost", Arial, sans-serif;
-  font-size: 18px;
-  margin: 0;
-  padding: 0;
-}
-
-.title {
-  margin: 0;
-  padding: 0;
-  font-family: "Jost", Arial, sans-serif;
-  font-weight: 400;
-  font-size: 45px;
-}
-
 .root {
   background-color: #ece2d9;
   text-rendering: optimizeLegibility;
@@ -42,6 +23,62 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center; */
+}
+
+.link {
+  text-decoration: none;
+  opacity: 1;
+}
+
+.link:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.paragraph {
+  font-family: "Jost", Arial, sans-serif;
+  font-size: 20px;
+  margin: 15px 0 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  font-family: "Jost", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 45px;
+}
+
+.block {
+  margin: 0;
+  padding: 120px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.block_blue {
+  background-color: #add0da;
+}
+
+.block__textbox {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  padding: 0;
+  max-width: 550px;
+}
+
+.block__image {
+  border: 1px solid red;
+  height: 400px;
+  width: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -100,63 +137,42 @@ a {
 
 .cover__title {
   margin: auto;
-  padding-top: 60px;
+  padding-top: 75px;
   font-size: 60px;
-}
-
-.introduction {
-  margin: 0;
-  padding: 100px 0;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-
-.introduction_box {
-  margin-left: 50px;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid red;
-  padding: 0;
-}
-
-/* .introduction__title {
-  
-} */
-
-.introduction__image {
-  border: 1px solid red;
-  height: 400px;
-  width: auto;
-  margin: 0;
-  padding: 0 20px;
-}
-
-.education {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  background-color: #add0da;
-}
-
-.experience {
-  margin: 0;
-  padding: 0;
-  width: 100%;
 }
 
 .price {
   margin: 0;
-  padding: 0;
+  padding: 110px 0;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price__title {
+    margin-bottom: 15px;
+}
+.price__box {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  /* justify-content: center; */
+}
+
+.price__icon {
+    width: 50px;
+    margin-left: 20px;
 }
 
 .appointment {
   margin: 0;
   padding: 0;
   width: 100%;
+}
+
+.appointment__icon {
+    width: 30px;
 }
 
 .footer {
