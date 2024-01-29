@@ -14,9 +14,9 @@
           <a href="#"
             ><img src="./images/вверх.webp" alt="Лого" class="menu__logo"
           /></a>
-          <p class="menu__option">Обо мне</p>
-          <p class="menu__option">Образование</p>
-          <p class="menu__option">Опыт</p>
+          <a href="#introduction"><p class="menu__option">Обо мне</p></a>
+          <a href="#education"><p class="menu__option">Образование</p></a>
+          <a href="#education"><p class="menu__option">Опыт</p></a>
           <p class="menu__option">Цены</p>
           <p class="menu__option">Записаться</p>
         </nav>
@@ -27,14 +27,14 @@
           <h1 class="cover__title">Психолог Яна Гнеденко</h1>
         </div>
 
-        <div class="introduction">
+        <div id="introduction" class="introduction">
           <div class="introduction_box">
-            <h2 class="introduction__header">Привет, меня зовут Яна!</h2>
-            <p>
+            <h2 class="title introduction__title">Привет, меня зовут Яна!</h2>
+            <p class="paragraph">
               Я — психолог-консультант, провожу индивидуальные сеансы
               психотерапии онлайн.
             </p>
-            <p>
+            <p class="paragraph">
               Основные темы, с которыми я работаю – это тревога и депрессия в
               разных их проявлениях.
             </p>
@@ -46,10 +46,10 @@
           />
         </div>
 
-        <div class="education">
-          <h2>Где я училась?</h2>
+        <div id="education" class="education">
+          <h2 class="title">Где я училась?</h2>
           <img
-            src="./images/chair.webp"
+            src="./images/chair.png"
             alt="Психолог на стуле"
             class="education__image"
           />
@@ -76,7 +76,7 @@
         </div>
 
         <div class="experience">
-          <h2>Где я успела применить свои навыки?</h2>
+          <h2 class="title">Где я успела применить свои навыки?</h2>
           <ul>
             <li>
               С 2012 по 2019 гг. была волонтером в московском Центре лечебной
@@ -100,9 +100,9 @@
         </div>
 
         <div class="price">
-          <h2>Стоимость онлайн-сессии</h2>
+          <h2 class="title">Стоимость онлайн-сессии</h2>
           <img
-            src="./images/online.webp"
+            src="./images/online.png"
             alt="Психолог онлайн"
             class="price__image"
           />
@@ -117,7 +117,7 @@
         </div>
 
         <div class="appointment">
-          <h2>Записаться</h2>
+          <h2 class="title">Записаться</h2>
           <p>Пишите мне в мессенджерах или на почту:</p>
           <p>+972 55 2876691</p>
           <p>yanagnedenko@gmail.com</p>
@@ -157,7 +157,7 @@
       </footer>
     </div>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,400;1,500&display=swap');
-      </style>
+      @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,400;1,500&display=swap");
+    </style>
   </body>
 </html>
