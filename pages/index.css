@@ -1,4 +1,5 @@
 @import url(../vendor/normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,400;1,500&display=swap");
 
 * {
   scroll-behavior: smooth;
@@ -9,7 +10,7 @@
   text-rendering: optimizeLegibility;
   margin: 0 auto;
   padding: 0;
-  max-width: 1280px;
+max-width: 1280px;
   /* border: 1px solid red; */
   position: relative;
 }
@@ -17,9 +18,9 @@
 .page {
   margin: 0;
   padding: 0;
-  font-family: "Jost", Arial, sans-serif;
+    font-family: "Jost", Arial, sans-serif;
   width: 100%;
-  /* display: flex;
+/* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; */
@@ -200,7 +201,7 @@
 
 .footer {
   margin: 0;
-  padding-left: 20px;
+  padding: 20px 0 0 20px;
   /* max-width: 100vw; */
   background-color: #a4b1b6;
   color: white;
@@ -209,4 +210,97 @@
 .footer__paragraph {
   font-size: 15px;
   line-height: 1;
+}
+
+.gallery {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.gallery__pic {
+  width: 300px;
+  height: 190px;
+  margin: 10px;
+}
+.gallery__pic:hover {
+  opacity: 0.6;
+}
+
+.longpic {
+  object-fit: cover;
+  object-position: top;
+}
+
+.popup {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  /* z-index: -2; */
+}
+
+.popup::after {
+  background: #000000;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.popup_open {
+  display: flex;
+}
+
+.popup__container {
+  position: relative;
+}
+
+.popup__photo-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.popup__close-button {
+  width: 34px;
+  height: 32px;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  z-index: 2;
+  margin: 0;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  color: white;
+  font-size: 30px;
+}
+
+.popup__image {
+  max-width: 880px;
+  max-height: 70vh;
+}
+
+.popup__close-button:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }

@@ -35,11 +35,11 @@
       </header>
 
       <main class="content">
-        <div class="cover">
+        <section class="cover">
           <h1 class="cover__title">Психолог Яна Гнеденко</h1>
-        </div>
+        </section>
 
-        <div id="introduction" class="block">
+        <section id="introduction" class="block">
           <div class="block__textbox">
             <h2 class="title">Привет, меня зовут Яна!</h2>
             <p class="paragraph">
@@ -56,9 +56,9 @@
             alt="Портрет Яны"
             class="block__image"
           />
-        </div>
+        </section>
 
-        <div id="education" class="block block_blue">
+        <section id="education" class="block block_blue">
           <img
             src="./images/chair.png"
             alt="Психолог на стуле"
@@ -89,9 +89,56 @@
               </li>
             </ul>
           </div>
-        </div>
+        </section>
+        <section class="gallery block_blue">
+          <img
+            class="gallery__pic"
+            src="./images/diplomas/diplom spetsialista.jpg"
+            alt="."
+            onclick="openPopup(this)"
+          />
+          <img
+            class="gallery__pic"
+            src="./images/diplomas/profpodgotovka.jpg"
+            alt="."
+            onclick="openPopup(this)"
+          />
+          <img
+            class="gallery__pic"
+            src="./images/diplomas/povishenie kvalifikatsii.jpg"
+            alt="."
+            onclick="openPopup(this)"
+          />
+          <img
+            class="gallery__pic"
+            src="./images/diplomas/kovcheg.jpg"
+            alt="."
+            onclick="openPopup(this)"
+          />
+          <img
+            class="gallery__pic"
+            src="./images/diplomas/kovcheg2.jpg"
+            alt="."
+            onclick="openPopup(this)"
+          />
+          <img class="gallery__pic longpic" src="./images/diplomas/kray.jpg" alt="."
+          onclick="openPopup(this)"
+           />
+          <img
+            class="gallery__pic"
+            src="./images/diplomas/family therapy.jpg"
+            alt="."
+            onclick="openPopup(this)"
+          />
+          <img
+            class="gallery__pic"
+            src="./images/diplomas/association.jpg"
+            alt="."
+            onclick="openPopup(this)"
+          />
+        </section>
 
-        <div id="experience" class="block">
+        <section id="experience" class="block">
           <div class="block__textbox">
             <h2 class="title">Где я&nbsp;успела применить свои навыки?</h2>
             <ul>
@@ -119,9 +166,9 @@
             alt="Птичка рисует"
             class="block__image"
           />
-        </div>
+        </section>
 
-        <div id="price" class="price block_blue">
+        <section id="price" class="price block_blue">
           <h2 class="title price__title">Стоимость онлайн-сессии</h2>
           <img
             src="./images/online.png"
@@ -132,9 +179,9 @@
             <p class="paragraph">50 долларов или эквивалент в другой валюте</p>
             <img src="./images/оплата.png" alt="Карточки" class="price__icon" />
           </div>
-        </div>
+        </section>
 
-        <div id="appointment" class="block">
+        <section id="appointment" class="block">
           <div class="block__textbox">
             <h2 class="title">Записаться</h2>
             <p class="paragraph">Пишите мне в мессенджерах или на почту:</p>
@@ -159,37 +206,42 @@
                 />
               </a>
               <a class="link" href="https://t.me/the_old_bird">
-              <img
-                src="./images/телеграм.webp"
-                alt="Telegram"
-                class="appointment__icon"
-              />
-            </a>
+                <img
+                  src="./images/телеграм.webp"
+                  alt="Telegram"
+                  class="appointment__icon"
+                />
+              </a>
             </div>
           </div>
-          
-            <img
-              src="./images/птичка3.png"
-              alt="Карточки"
-              class="block__image"
-            />
+
+          <img src="./images/птичка3.png" alt="Карточки" class="block__image" />
           <!-- <blockquote>
             На любые ваши вопросы я могу дать свои ответы, но не считаю их лучше
             тех, которые мы сможем найти с вами вместе.
           </blockquote> -->
-        </div>
+        </section>
+
+        <footer class="footer">
+          <p class="paragraph footer__paragraph">
+            Разработка и дизайн сайта: Лилия Михлина
+          </p>
+          <p class="paragraph footer__paragraph">
+            Иллюстрации: Дана Марасинова
+          </p>
+          <p class="paragraph footer__paragraph">© 2024</p>
+        </footer>
       </main>
 
-      <footer class="footer">
-        <p class="paragraph footer__paragraph">
-          Разработка и дизайн сайта: Лилия Михлина
-        </p>
-        <p class="paragraph footer__paragraph">Иллюстрации: Дана Марасинова</p>
-        <p class="paragraph footer__paragraph">© 2022</p>
-      </footer>
+      <div class="popup">
+        <div class="popup__container">
+          <img class="popup__image" src="#" alt="." />
+          <button class="popup__close-button" type="button">X</button>
+          <p class="popup__photo-text"></p>
+        </div>
+      </div>
     </div>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,400;1,500&display=swap");
-    </style>
+
+    <script src="index.js"></script>
   </body>
 </html>
