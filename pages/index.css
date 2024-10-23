@@ -234,6 +234,10 @@ max-width: 1280px;
   object-position: top;
 }
 
+.transform {
+  object-position: center 16px;
+}
+
 .popup {
   width: 100%;
   height: 100vh;
