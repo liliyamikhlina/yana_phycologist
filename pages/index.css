@@ -234,9 +234,9 @@ max-width: 1280px;
   object-position: top;
 }
 
-.transform {
-  object-position: center 16px;
-}
+/* .transform {
+  object-position: center 18px;
+} */
 
 .popup {
   width: 100%;
